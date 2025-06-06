@@ -1,4 +1,3 @@
-
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { useWalletStore } from "@/store/walletStore";
@@ -57,9 +56,8 @@ const WelcomePage = () => {
         <div className="flex flex-col items-center justify-center flex-grow z-10 text-center mt-16 w-full">
           {/* Wallet Illustration */}
           <motion.img
-            // Assuming the image is in the public root or public/illustrations/
-            // Verify the correct path in your project structure.
-            src="/wallet-illustration.png" // Changed path, ensure image exists in public folder
+            // Using the existing logo file instead of the missing wallet illustration
+            src="/icons/logo_howwallet.png"
             alt="Secure Wallet Illustration"
             className="w-48 h-auto mb-8" // Adjusted size
             initial={{ opacity: 0, y: 20 }}
@@ -119,4 +117,3 @@ const WelcomePage = () => {
 };
 
 export default WelcomePage;
-
